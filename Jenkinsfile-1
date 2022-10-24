@@ -9,10 +9,7 @@ pipeline {
         withSonarQubeEnv(installationName: 'sonarcloud') {
           sh '''./mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar \
           -Dsonar.organization=andreasstoer0963 \
-          -Dsonar.projectName=java-web-app \
-          -Dsonar.projectKey=java-web-app \
-	  -Dsonar.token=fd431bbe3eb62821e888a7a1a05800af3040b187 \
-	  -Dsonar.login=fd431bbe3eb62821e888a7a1a05800af3040b187'''
+          -Dsonar.projectKey=andreasstoer063_java-web-app'''
         }
       }
     }
