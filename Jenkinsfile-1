@@ -11,6 +11,7 @@ pipeline {
           -Dsonar.organization=andreasstoer0963 \
           -Dsonar.projectName=java-web-app \
           -Dsonar.projectKey=java-web-app \
+	  -Dsonar.token=fd431bbe3eb62821e888a7a1a05800af3040b187 \
 	  -Dsonar.login=fd431bbe3eb62821e888a7a1a05800af3040b187'''
         }
       }
