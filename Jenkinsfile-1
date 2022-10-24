@@ -5,6 +5,9 @@ pipeline {
   }
   stages {
     stage('Scan') {
+      environment {
+        ORGANIZATION = "andreasstoer0963"
+      }
       steps {
         withSonarQubeEnv(installationName: 'sonarcloud') {
           sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
